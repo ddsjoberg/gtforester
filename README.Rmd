@@ -57,10 +57,9 @@ tbl <-
 ```
 
 ```{r example-add_forest, include = FALSE}
-path.tbl <- file.path(tempdir(), "temp1.png")
-gt::gtsave(tbl, file = file.path(path.tbl))
+gt::gtsave(tbl, file = "man/figures/README-add_forest.png")
 ```
 
 ```{r out.width = "76%", echo = FALSE}
-knitr::include_graphics(path.tbl)
+knitr::include_graphics("man/figures/README-add_forest.png")
 ```

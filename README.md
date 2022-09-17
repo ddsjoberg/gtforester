@@ -48,4 +48,4 @@ tbl <-
   add_forest()
 ```
 
-<img src="../../AppData/Local/Temp/RtmpUnD385/temp1.png" width="76%" />
+<img src="man/figures/README-add_forest.png" width="76%" />
