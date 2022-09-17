@@ -18,3 +18,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Suggests: 
     covr
+URL: http://www.danieldsjoberg.com/gtforester/
