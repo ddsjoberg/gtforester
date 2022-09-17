@@ -1,0 +1,3 @@
+#' @importFrom gtsummary `%>%`
+#' @export
+gtsummary::`%>%`

@@ -1,22 +1,31 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # gtforester
 
 <!-- badges: start -->
-
-[![Codecov test
-coverage](https://codecov.io/gh/ddsjoberg/gtforester/branch/main/graph/badge.svg)](https://app.codecov.io/gh/ddsjoberg/gtforester?branch=main)
+[![Codecov test coverage](https://codecov.io/gh/ddsjoberg/gtforester/branch/main/graph/badge.svg)](https://app.codecov.io/gh/ddsjoberg/gtforester?branch=main)
 [![R-CMD-check](https://github.com/ddsjoberg/gtforester/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ddsjoberg/gtforester/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-**Very** experimental and early stage package for creating forest plots
-from gtsummary tables. The result is a gt table that includes the plot.
+**Very** experimental and early stage package for creating forest plots from gtsummary tables.
+The result is a gt table that includes the plot.
 
 ## Installation
 
-You can install the development version of gtforester from
-[GitHub](https://github.com/) with:
+You can install the development version of gtforester from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -25,9 +34,8 @@ devtools::install_github("ddsjoberg/gtforester")
 
 ## Example
 
-``` r
+```{r example}
 library(gtforester)
-#> Loading required package: gtsummary
 
 tbl <- 
   trial %>%
@@ -48,4 +56,11 @@ tbl <-
   add_forest()
 ```
 
-<img src="../../AppData/Local/Temp/RtmpUnD385/temp1.png" width="76%" />
+```{r example-add_forest, include = FALSE}
+path.tbl <- file.path(tempdir(), "temp1.png")
+gt::gtsave(tbl, file = file.path(path.tbl))
+```
+
+```{r out.width = "76%", echo = FALSE}
+knitr::include_graphics(path.tbl)
+```
