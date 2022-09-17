@@ -4,9 +4,17 @@
 \name{gtforester-package}
 \alias{gtforester}
 \alias{gtforester-package}
-\title{gtforester: What the Package Does (One Line, Title Case)}
+\title{gtforester: Create 'gtsummary' Forest Plot}
 \description{
 What the package does (one paragraph).
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{http://www.danieldsjoberg.com/gtforester/}
+  \item Report bugs at \url{https://github.com/ddsjoberg/gtforester/issues/}
+}
+
 }
 \author{
 \strong{Maintainer}: Daniel D. Sjoberg \email{danield.sjoberg@gmail.com} (\href{https://orcid.org/0000-0003-0862-2018}{ORCID}) [copyright holder]

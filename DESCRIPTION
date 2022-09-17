@@ -1,11 +1,13 @@
 Package: gtforester
-Title: What the Package Does (One Line, Title Case)
+Title: Create 'gtsummary' Forest Plot
 Version: 0.0.0.9000
 Authors@R: 
     person("Daniel D.", "Sjoberg", , "danield.sjoberg@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0003-0862-2018"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
+URL: http://www.danieldsjoberg.com/gtforester/
+BugReports: https://github.com/ddsjoberg/gtforester/issues/
 Depends:
     gtsummary
 Imports: 
@@ -13,9 +15,8 @@ Imports:
     ggplot2,
     gt,
     rlang
+Suggests: 
+    covr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
-Suggests: 
-    covr
-URL: http://www.danieldsjoberg.com/gtforester/
