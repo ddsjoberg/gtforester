@@ -14,6 +14,7 @@ Imports:
     dplyr,
     ggplot2,
     gt,
+    purrr,
     rlang
 Suggests: 
     covr
