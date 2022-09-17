@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/404.html</loc>
   </url>
   <url>
-    <loc>/LICENSE-text.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/authors.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/index.html</loc>
   </url>
   <url>
-    <loc>/reference/add_forest.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/reference/add_forest.html</loc>
   </url>
   <url>
-    <loc>/reference/gtforester-package.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/reference/gtforester-package.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/reexports.html</loc>
+    <loc>http://www.danieldsjoberg.com/gtforester/reference/reexports.html</loc>
   </url>
 </urlset>
