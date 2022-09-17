@@ -2,6 +2,7 @@
 
 export("%>%")
 export(add_forest)
+export(tbl_subgroups)
 importFrom(gtsummary,`%>%`)
 importFrom(rlang,"%||%")
 importFrom(rlang,.data)

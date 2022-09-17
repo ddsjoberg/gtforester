@@ -63,3 +63,31 @@ gt::gtsave(tbl, file = "man/figures/README-add_forest.png")
 ```{r out.width = "76%", echo = FALSE}
 knitr::include_graphics("man/figures/README-add_forest.png")
 ```
+
+```{r}
+tbl <-
+  trial %>%
+  tbl_subgroups(
+    subgroups = c("grade", "stage"),
+    ~ glm(response ~ trt, data = .x) %>%
+      gtsummary::tbl_regression(
+        show_single_row = trt,
+        exponentiate = TRUE)
+  ) %>%
+  gtsummary::modify_column_merge(
+    pattern = "{estimate} (95% CI {ci}; {p.value})",
+    rows = !is.na(estimate)
+  ) %>%
+  gtsummary::modify_header(estimate = "**Odds Ratio**") %>%
+  gtsummary::bold_labels() %>%
+  add_forest() %>%
+  gt::tab_header(gt::md("**Effect of Treatment on Tumor Response**"))
+```
+
+```{r example-tbl_subgroups, include = FALSE}
+gt::gtsave(tbl, file = "man/figures/README-tbl_subgroups.png")
+```
+
+```{r out.width = "76%", echo = FALSE}
+knitr::include_graphics("man/figures/README-tbl_subgroups.png")
+```

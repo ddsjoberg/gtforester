@@ -49,3 +49,25 @@ tbl <-
 ```
 
 <img src="man/figures/README-add_forest.png" width="76%" />
+
+``` r
+tbl <-
+  trial %>%
+  tbl_subgroups(
+    subgroups = c("grade", "stage"),
+    ~ glm(response ~ trt, data = .x) %>%
+      gtsummary::tbl_regression(
+        show_single_row = trt,
+        exponentiate = TRUE)
+  ) %>%
+  gtsummary::modify_column_merge(
+    pattern = "{estimate} (95% CI {ci}; {p.value})",
+    rows = !is.na(estimate)
+  ) %>%
+  gtsummary::modify_header(estimate = "**Odds Ratio**") %>%
+  gtsummary::bold_labels() %>%
+  add_forest() %>%
+  gt::tab_header(gt::md("**Effect of Treatment on Tumor Response**"))
+```
+
+<img src="man/figures/README-tbl_subgroups.png" width="76%" />
